@@ -38,8 +38,16 @@ try:
     )
     df_clientes_sp = df_final [filtro]
     
-    print (df_clientes_sp)
+    print (df_clientes_sp [[
+           'nome',
+           'sobrenome','cidade',
+           'codigo_pedido',
+           'data_pedido','produto',
+           'valor'  
+       
+        ]])
    
+
    
 except Exception as e:
     print(f'Erro nos dados {e}')    
